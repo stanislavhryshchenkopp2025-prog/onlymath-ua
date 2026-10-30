@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ONLYMATH-UA — онлайн-школа математики для учнів 1–11 класів. Шкільна, профільна математика, підготовка до НМТ та олімпіад.">
+    <meta name="theme-color" content="#ffffff">
+    <title>ONLYMATH-UA — онлайн-школа математики для учнів 1–11 класів</title>
+    <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
+
+    <header id="top" class="sticky top-0 z-50 bg-white border-b border-[#e8edf3]">
+        <div class="max-w-[1550px] mx-auto min-h-[75px] flex items-center justify-between">
+            <a
+                href="#top"
+                class="flex items-center pl-4 sm:pl-8 text-[15px] font-semibold text-[#111827] hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded-lg transition shrink-0"
+                aria-label="ONLYMATH-UA — на головну"
+            >
+                <img src="assets/icons/logo.svg" alt="Логотип ONLYMATH-UA" width="40" height="40" class="w-10 h-10 shrink-0">
+                <span class="whitespace-nowrap ml-2">ONLYMATH-UA</span>
+            </a>
+
+            <nav class="hidden lg:flex items-center justify-between lg:w-[30%] shrink-0 text-[15px] font-semibold text-[#111827]" aria-label="Головна навігація">
+                <a href="#directions" class="hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded-md transition whitespace-nowrap">Курси</a>
+                <a href="#about" class="hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded-md transition whitespace-nowrap">Про школу</a>
+                <a href="#contact" class="hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded-md transition whitespace-nowrap">Викладачі</a>
+                <a href="#contact" class="hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded-md transition whitespace-nowrap">Контакти</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-3 pr-4 sm:pr-8 shrink-0">
+                <a href="#directions"  class="min-h-[44px] px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-white text-[#111827] border border-[#03a9fc] hover:bg-[#f0f8ff] transition w-full sm:w-auto">
+                    Обрати напрямок навчання
+                </a>
+                <a href="#contact"  class="min-h-[44px] px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-lg shadow-[#03a9fc]/10 hover:bg-[#00a0ed] hover:shadow-lg hover:shadow-[#03a9fc]/20 transition w-full sm:w-auto">
+                    Записатися на пробний урок
+                </a>
+            </div>
+
+            <details class="relative block lg:hidden mr-4 sm:mr-8 shrink-0">
+                <summary
+                    class="flex w-11 h-11 cursor-pointer list-none items-center justify-center rounded-2xl border border-[#e8edf3] bg-white transition hover:border-[#03a9fc] hover:bg-[#f0f8ff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 [&::-webkit-details-marker]:hidden"
+                    aria-label="Меню навігації"
+                >
+                    <span class="flex flex-col items-center justify-center gap-[4.5px]" aria-hidden="true">
+                        <span class="w-4 h-[2px] rounded-full bg-[#06243a]"></span>
+                        <span class="w-4 h-[2px] rounded-full bg-[#06243a]"></span>
+                        <span class="w-4 h-[2px] rounded-full bg-[#06243a]"></span>
+                    </span>
+                </summary>
+                <nav class="absolute right-0 top-full z-50 mt-2 flex min-w-52 flex-col gap-1 rounded-xl border border-[#e8edf3] bg-white p-2 text-sm font-semibold text-[#111827] shadow-lg" aria-label="Мобільна навігація">
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-[#f0f8ff] hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc]" href="#directions">Курси</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-[#f0f8ff] hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc]" href="#about">Про школу</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-[#f0f8ff] hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc]" href="#contact">Викладачі та контакти</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-[#f0f8ff] hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc]" href="#contact">Записатися на урок</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero combines the page heading, primary actions, and illustration. -->
+        <section class="section-spacing partitioned-section hero-proportions page-width" aria-labelledby="hero-title">
+            <article class="flex flex-col gap-4 [&>*]:!my-0">
+                <p class="hero-eyebrow">Онлайн-школа · 1–11 клас</p>
+                <h1 id="hero-title">Математика, яку розуміють. <span>Результат, який видно.</span></h1>
+                <p>Від шкільної та профільної математики до НМТ й олімпіад — допомагаємо зрозуміти предмет і рухатися до своєї мети.</p>
+                <div class="hero-actions">
+                    <a class="min-h-[44px] px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-lg shadow-[#03a9fc]/10 hover:bg-[#00a0ed] hover:shadow-lg hover:shadow-[#03a9fc]/20 transition w-full sm:w-auto" href="#contact">Записатися на пробний урок <i class="icon fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="min-h-[44px] px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-white text-[#111827] border border-[#03a9fc] hover:bg-[#f0f8ff] transition w-full sm:w-auto" href="#directions">Обрати напрям навчання</a>
+                </div>
+                <p class="hero-points">Живі заняття <span aria-hidden="true">·</span> Зрозумілі пояснення <span aria-hidden="true">·</span> Власний темп</p>
+            </article>
+            <img class="banner-image" src="assets/images/banner%20image.svg" alt="Графік параболи на математичній координатній сітці" width="540" height="470">
+        </section>
+
+        <!-- Про школу: опис підходу та короткі факти. -->
+        <section class="section-spacing darker-background bg-[var(--background-section-color)]" id="about" aria-labelledby="about-title">
+            <div class="page-width partitioned-section about-proportions">
+                <article class="flex flex-col gap-4 [&>*]:!my-0">
+                    <p class="eyebrow">Про нашу школу</p>
+                    <h2 class="section-title" id="about-title">Хто ми і чому нам довіряють</h2>
+                    <p>Більшість учнів застрягають у математиці не через брак здібностей, а через хаотичне пояснення матеріалу та невідомий початковий рівень. Батьки ж часто стикаються з розмитими обіцянками та незрозумілим ціноутворенням.</p>
+                    <p>Ми створили ONLYMATH-UA, щоб зробити навчання системним і повністю прозорим. Замість заучування формул ми пояснюємо логіку за допомогою Live-уроків, інтерактивних симуляцій та зрозумілої діагностики. Ми вимірюємо стартову точку дитини, формуємо індивідуальну траєкторію та показуємо щомісячний прогрес без прихованих платежів і несподіваних доплат.</p>
+                    <p>Почніть із мети та класу учня. Якщо не впевнені у виборі — визначимо рівень на пробному уроці.</p>
+                </article>
+                <aside class="about-stats" aria-label="Факти про ONLYMATH-UA">
+                    <article class="about-stat-card">
+                        <h3 class="card-title">+45 балів</h3>
+                        <p class="card-description">середній приріст учнів на НМТ</p>
+                    </article>
+                    <article class="about-stat-card">
+                        <h3 class="card-title">100% прозорість</h3>
+                        <p class="card-description">фіксована вартість курсів у калькуляторі</p>
+                    </article>
+                    <article class="about-stat-card">
+                        <h3 class="card-title">4 напрямки</h3>
+                        <p class="card-description">підготовка від 1 класу до НМТ та олімпіад</p>
+                    </article>
+                </aside>
+            </div>
+            <div class="page-width mt-8 sm:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                <div class="min-w-0">
+                    <p class="eyebrow">ONLYMATH промо</p>
+                    <div class="w-full overflow-hidden rounded-2xl">
+                        <iframe
+                            class="block w-full aspect-video"
+                            src="https://www.youtube.com/embed/Nbwv5wHQoj0?si=mzK-KaILxV4bW2uC"
+                            title="Відео про ONLYMATH-UA"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="min-w-0">
+                    <p class="eyebrow">Ми на мапі</p>
+                    <div class="w-full overflow-hidden rounded-2xl">
+                        <iframe
+                            class="block w-full aspect-video border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.32319896978!2d24.008805576059917!3d49.83638443138813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add790d2c8979%3A0x816b961499e08d49!2zTnUgIkzKuXZpdnPKuWthIFBvbGl0ZWtobmlrYSI!5e0!3m2!1sen!2sua!4v1793379708429!5m2!1sen!2sua"
+                            title="ONLYMATH-UA на Google Maps"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Напрями навчання. -->
+        <section id="directions" class="section-spacing py-12 sm:py-16 bg-[var(--background-surface-color)] font-['Lato',sans-serif]" aria-labelledby="directions-title">
+            <div class="page-width">
+                <header class="mb-8 sm:mb-12 text-center max-w-2xl mx-auto">
+                    <p class="text-xs font-bold uppercase tracking-wider text-[#0077b6] mb-2">Навчання для вашої мети</p>
+                    <h2 id="directions-title" class="text-2xl sm:text-3xl font-bold text-[#111827]">Оберіть свій напрям</h2>
+                </header>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 w-full mx-auto items-stretch">
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="relative overflow-hidden rounded-xl mb-6 bg-[#f0f8ff] w-full max-w-[272px] mx-auto aspect-[4/3] max-h-[204px] flex items-center justify-center">
+                                <img src="assets/icons/triangle.svg" alt="Геометричний візерунок із трикутників" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-[#06243a] text-xs font-bold px-3 py-1 rounded-full border border-[#e8edf3]">1–11 клас</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors mb-1">Шкільна математика</h3>
+                            <p class="text-xs font-semibold text-[#0077b6] mb-3">Базовий та підвищений рівень</p>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-6">Заповнюємо прогалини у знаннях, піднімаємо оцінки та розвиваємо критичне мислення й розуміння предмета без стресу.</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3]/60 mt-auto">
+                            <a href="#contact" class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-3 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-sm hover:bg-[#00a0ed] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap">Визначити рівень дитини →</a>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="relative overflow-hidden rounded-xl mb-6 bg-[#f0f8ff] w-full max-w-[272px] mx-auto aspect-[4/3] max-h-[204px] flex items-center justify-center">
+                                <img src="assets/icons/fractal.svg" alt="Фрактальний математичний візерунок" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-[#06243a] text-xs font-bold px-3 py-1 rounded-full border border-[#e8edf3]">9–11 клас</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors mb-1">Підготовка до НМТ</h3>
+                            <p class="text-xs font-semibold text-[#0077b6] mb-3">Системна підготовка до іспиту</p>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-6">Системна підготовка зі щомісячними симуляціями іспиту та орієнтиром на результат 180+ балів.</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3]/60 mt-auto">
+                            <a href="#contact" class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-3 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-sm hover:bg-[#00a0ed] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap">Пройти тест рівня →</a>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="relative overflow-hidden rounded-xl mb-6 bg-[#f0f8ff] w-full max-w-[272px] mx-auto aspect-[4/3] max-h-[204px] flex items-center justify-center">
+                                <img src="assets/icons/carpet.svg" alt="Симетричний математичний візерунок" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-[#06243a] text-xs font-bold px-3 py-1 rounded-full border border-[#e8edf3]">5–11 клас</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors mb-1">Профільна математика</h3>
+                            <p class="text-xs font-semibold text-[#0077b6] mb-3">Профільні ліцеї та класи</p>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-6">Поглиблена алгебра та геометрія для учнів фізико-математичних ліцеїв і профільних класів із підвищеним академічним темпом.</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3]/60 mt-auto">
+                            <a href="#contact" class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-3 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-sm hover:bg-[#00a0ed] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap">Дізнатись більше</a>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="relative overflow-hidden rounded-xl mb-6 bg-[#f0f8ff] w-full max-w-[272px] mx-auto aspect-[4/3] max-h-[204px] flex items-center justify-center">
+                                <img src="assets/images/banner%20image.svg" alt="Графік параболи на координатній сітці" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-[#06243a] text-xs font-bold px-3 py-1 rounded-full border border-[#e8edf3]">Олімпіади · МАН</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors mb-1">Олімпіадна математика</h3>
+                            <p class="text-xs font-semibold text-[#0077b6] mb-3">Олімпіади · МАН · змагання</p>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-6">Розвиваємо нестандартне мислення й комбінаторику та готуємо до перемог у Всеукраїнських олімпіадах і МАН.</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3]/60 mt-auto">
+                            <a href="#contact" class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-3 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-sm hover:bg-[#00a0ed] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap">Дізнатись більше</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Переваги школи. -->
+        <section id="advantages" class="section-spacing py-12 sm:py-16 bg-[var(--background-section-color)] font-['Lato',sans-serif]" aria-labelledby="features-title">
+            <div class="page-width">
+                <header class="mb-8 sm:mb-12 text-center max-w-2xl mx-auto">
+                    <p class="text-xs font-bold uppercase tracking-wider text-[#0077b6] mb-2">Навчання без зайвих турбот</p>
+                    <h2 id="features-title" class="text-2xl sm:text-3xl font-bold text-[#111827]">Чому обирають ONLYMATH-UA</h2>
+                </header>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 !gap-6 w-full mx-auto items-stretch">
+                    <article class="bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div class="mb-3">
+                            <span aria-hidden="true" class="icon-logo block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">Точна ціна без прихованих доплат</h3>
+                        <p class="text-sm text-[#60718c] leading-relaxed">Розрахуйте вартість у калькуляторі за хвилину: повний перелік послуг і форматів без прихованих комісій та несподіваних платежів.</p>
+                    </article>
+                    <article class="bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div class="mb-3">
+                            <span aria-hidden="true" class="icon-logo block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">Діагностика рівня за 5 хвилин</h3>
+                        <p class="text-sm text-[#60718c] leading-relaxed">Без обов’язкової реєстрації та стресу. Швидкий тест визначить прогалини й передасть результати для розрахунку програми.</p>
+                    </article>
+                    <article class="bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div class="mb-3">
+                            <span aria-hidden="true" class="icon-logo block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">Гнучкість та захист від блекаутів</h3>
+                        <p class="text-sm text-[#60718c] leading-relaxed">Живі заняття з викладачем і доступ до відеозаписів у будь-який час — навчання триває навіть під час вимкнень світла чи змін розкладу.</p>
+                    </article>
+                    <article class="bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div class="mb-3">
+                            <span aria-hidden="true" class="icon-logo block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">Симуляція НМТ в інтерфейсі</h3>
+                        <p class="text-sm text-[#60718c] leading-relaxed">Щомісячні тренувальні тести в інтерфейсі справжнього іспиту. Учень звикає до таймінгу та отримує аналіз помилок, а не лише бал.</p>
+                    </article>
+                    <article class="bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div class="mb-3">
+                            <span aria-hidden="true" class="icon-logo block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">Прозорий контроль для батьків</h3>
+                        <p class="text-sm text-[#60718c] leading-relaxed">Батьківський кабінет і щомісячні звіти: які теми пройдені, як зростають оцінки та де дитині потрібна підтримка.</p>
+                    </article>
+                    <article class="bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div class="mb-3">
+                            <span aria-hidden="true" class="icon-logo block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">Заявка в 1 клік без зайвих дзвінків</h3>
+                        <p class="text-sm text-[#60718c] leading-relaxed">Залиште ім’я та Telegram або телефон. Менеджер побачить розрахунки з калькулятора й запропонує рішення без довгих опитувань.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Результати учнів. -->
+        <section id="results" class="section-spacing py-12 sm:py-16 bg-[var(--background-surface-color)] font-['Lato',sans-serif]" aria-labelledby="results-title">
+            <div class="page-width">
+                <header class="mb-8 sm:mb-12 text-center max-w-2xl mx-auto">
+                    <p class="text-xs font-bold uppercase tracking-wider text-[#0077b6] mb-2">Підтверджені досягнення</p>
+                    <h2 id="results-title" class="text-2xl sm:text-3xl font-bold text-[#111827]">Результати наших учнів</h2>
+                </header>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 w-full mx-auto items-stretch">
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="mb-3">
+                                <span aria-hidden="true" class="icon-fractal block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                            </div>
+                            <h3 class="text-3xl font-black text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">10.6</h3>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-4">середній бал учнів у школі вже після двох місяців систематичних занять</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                            <div class="flex items-center justify-between text-xs text-[#60718c]">
+                                <span>Період: 2 місяці</span>
+                                <span class="font-semibold text-emerald-600">Шкільний бал</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="mb-3">
+                                <span aria-hidden="true" class="icon-fractal block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                            </div>
+                            <h3 class="text-3xl font-black text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">184.5</h3>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-4">середній бал нашого випускника на підсумковому НМТ з математики</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                            <div class="flex items-center justify-between text-xs text-[#60718c]">
+                                <span>Підсумковий іспит</span>
+                                <span class="font-semibold text-[#0077b6]">Результат НМТ</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="mb-3">
+                                <span aria-hidden="true" class="icon-fractal block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                            </div>
+                            <h3 class="text-3xl font-black text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">94%</h3>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-4">учнів профільних ліцеїв і класів покращують успішність зі складних тем алгебри та геометрії</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                            <div class="flex items-center justify-between text-xs text-[#60718c]">
+                                <span>Алгебра та геометрія</span>
+                                <span class="font-semibold text-[#0077b6]">Профільна математика</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:border-[#03a9fc] hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                        <div>
+                            <div class="mb-3">
+                                <span aria-hidden="true" class="icon-fractal block h-10 w-10 bg-[#cbd5e1] transition-colors duration-300 group-hover:bg-[#38bdf8]"></span>
+                            </div>
+                            <h3 class="text-3xl font-black text-[#111827] group-hover:text-[#0077b6] transition-colors duration-200 mb-2">129</h3>
+                            <p class="text-sm text-[#60718c] leading-relaxed mb-4">переможців і призерів міських та обласних олімпіад і МАН підготувала наша школа</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                            <div class="flex items-center justify-between text-xs text-[#60718c]">
+                                <span>Міський та обласний рівні</span>
+                                <span class="font-semibold text-[#0077b6]">Олімпіади та МАН</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-spacing darker-background  flex flex-col gap-4">
+            <!-- Калькулятор і доступні тарифи. -->
+            <section class="bg-[var(--background-section-color)]" id="calculator" aria-labelledby="calculator-title">
+                <div class="page-width flex flex-col gap-1">
+                <header>
+                    <p class="eyebrow">Ваш план на навчання</p>
+                    <h2 class="section-title" id="calculator-title">Розрахуйте вартість навчання за будь-яким напрямком</h2>
+                    <p class="section-hint">Оберіть параметри, щоб побачити рекомендований тариф та альтернативи.</p>
+                </header>
+                <form class="form calculator-form" action="#tariffs" method="get">
+                    <fieldset class="radio-field course-radio">
+                        <legend>Напрям навчання</legend>
+                        <div>
+                            <label class="radio-button"><input type="radio" name="course" value="school"> Шкільна математика</label>
+                            <label class="radio-button"><input type="radio" name="course" value="nmt" checked> Підготовка до НМТ</label>
+                            <label class="radio-button"><input type="radio" name="course" value="profile"> Профільна математика</label>
+                            <label class="radio-button"><input type="radio" name="course" value="olympiad"> Олімпіадна математика</label>
+                        </div>
+                    </fieldset>
+                    <div class="line-of-fields">
+                        <div class="field">
+                            <label for="grade">Клас</label>
+                            <select id="grade" name="grade">
+                                <option value="1">1 клас</option>
+                                <option value="2">2 клас</option>
+                                <option value="3">3 клас</option>
+                                <option value="4">4 клас</option>
+                                <option value="5">5 клас</option>
+                                <option value="6">6 клас</option>
+                                <option value="7">7 клас</option>
+                                <option value="8">8 клас</option>
+                                <option value="9">9 клас</option>
+                                <option value="10">10 клас</option>
+                                <option value="11" selected>11 клас</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="nmt-score">Поточний бал НМТ</label>
+                            <input id="nmt-score" name="nmt-score" type="number" min="100" max="200" value="135">
+                        </div>
+                        <div class="field">
+                            <label for="target-score">Бажаний бал НМТ</label>
+                            <input id="target-score" name="target-score" type="number" min="100" max="200" value="180">
+                        </div>
+                    </div>
+                    <p class="calculator-hint">Для НМТ — 9–11 класи. Введіть поточний і бажаний бал у діапазоні 100–200.</p>
+                    <div class="line-of-fields calculator-format-line">
+                        <fieldset class="radio-field format-field">
+                            <legend>Формат навчання</legend>
+                            <div class="format-options">
+                                <label class="radio-button"><input type="radio" name="format" value="group" checked> Група</label>
+                                <label class="radio-button"><input type="radio" name="format" value="mini-group"> Мінігрупа</label>
+                                <label class="radio-button"><input type="radio" name="format" value="individual"> 1:1</label>
+                            </div>
+                        </fieldset>
+                        <div class="field">
+                            <label for="duration">Тривалість навчання</label>
+                            <select id="duration" name="duration">
+                                <option value="1">1 місяць</option>
+                                <option value="3">3 місяці</option>
+                                <option value="6">6 місяців</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="min-h-[44px] px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-lg shadow-[#03a9fc]/10 hover:bg-[#00a0ed] hover:shadow-lg hover:shadow-[#03a9fc]/20 transition w-48 calculator-submit" type="submit">Розрахувати <i class="icon fa-solid fa-calculator" aria-hidden="true"></i></button>
+                </form>
+                </div>
+            </section>
+
+            <!-- Selected plan is followed by comparable alternatives. -->
+            <section id="tariffs" class="hidden bg-[var(--background-section-color)] " aria-labelledby="tariffs-title">
+                <div class="page-width flex flex-col gap-8">
+                    <header class="text-center max-w-2xl mx-auto">
+                        <p class="text-xs font-bold uppercase tracking-wider text-[#0077b6] mb-2">Прозорі ціни</p>
+                        <h2 id="tariffs-title" class="text-2xl sm:text-3xl font-bold text-[#111827]">Ваш рекомендований тариф та альтернативи</h2>
+                        <p class="text-sm text-[#60718c] mt-2">Орієнтовна вартість пакетів за 1 місяць.</p>
+                    </header>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 w-full mx-auto items-stretch">
+                        <article class="flex flex-col justify-between bg-white rounded-2xl border-2 border-[#03a9fc] p-6 shadow-md relative hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                            <span class="absolute -top-3 left-6 bg-[#03a9fc] text-[#06243a] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Обрано · рекомендовано</span>
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-[#111827] mt-2 mb-1">Стандарт</h3>
+                                <p class="text-xs font-semibold text-[#60718c] mb-6">Підготовка до НМТ · 11 клас</p>
+                                <ul class="text-sm text-[#111827] space-y-3 mb-6">
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Формат: група</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Пакет: 1 місяць</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Live-заняття та записи</span></li>
+                                </ul>
+                            </div>
+                            <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                                <p class="text-2xl font-black text-[#111827] mb-4">1 000 <span class="text-sm font-normal text-[#60718c]">грн/міс</span></p>
+                                <a class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-sm hover:bg-[#00a0ed] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap" href="#contact">Дізнатись більше</a>
+                            </div>
+                        </article>
+                        <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:border-[#03a9fc] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-[#0077b6] bg-[#f0f8ff] px-2.5 py-1 rounded-full border border-[#e8edf3]">Альтернатива</span>
+                                <h3 class="text-2xl font-extrabold text-[#111827] mt-4 mb-1">Мінігрупа</h3>
+                                <p class="text-xs font-semibold text-[#60718c] mb-6">Підготовка до НМТ · 11 клас</p>
+                                <ul class="text-sm text-[#111827] space-y-3 mb-6">
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Формат: мінігрупа</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Пакет: 1 місяць</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Менша кількість учнів, заняття наживо та записи</span></li>
+                                </ul>
+                            </div>
+                            <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                                <p class="text-2xl font-black text-[#111827] mb-4">1 200 <span class="text-sm font-normal text-[#60718c]">грн/міс</span></p>
+                                <a class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-white text-[#111827] border border-[#03a9fc] hover:bg-[#f0f8ff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap" href="#contact">Дізнатись більше</a>
+                            </div>
+                        </article>
+                        <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:border-[#03a9fc] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-[#0077b6] bg-[#f0f8ff] px-2.5 py-1 rounded-full border border-[#e8edf3]">Альтернатива</span>
+                                <h3 class="text-2xl font-extrabold text-[#111827] mt-4 mb-1">Індивідуальний</h3>
+                                <p class="text-xs font-semibold text-[#60718c] mb-6">Підготовка до НМТ · 11 клас</p>
+                                <ul class="text-sm text-[#111827] space-y-3 mb-6">
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Формат: 1:1</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Пакет: 1 місяць</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Персональна увага</span></li>
+                                </ul>
+                            </div>
+                            <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                                <p class="text-2xl font-black text-[#111827] mb-4">1 500 <span class="text-sm font-normal text-[#60718c]">грн/міс</span></p>
+                                <a class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-white text-[#111827] border border-[#03a9fc] hover:bg-[#f0f8ff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap" href="#contact">Дізнатись більше</a>
+                            </div>
+                        </article>
+                        <article class="flex flex-col justify-between bg-white rounded-2xl border border-[#e8edf3] p-6 shadow-sm hover:shadow-[0_8px_24px_rgba(17,24,39,0.08)] hover:border-[#03a9fc] hover:-translate-y-0.5 transition-all duration-300 group w-full h-full">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-[#0077b6] bg-[#f0f8ff] px-2.5 py-1 rounded-full border border-[#e8edf3]">Альтернатива</span>
+                                <h3 class="text-2xl font-extrabold text-[#111827] mt-4 mb-1">Розширений</h3>
+                                <p class="text-xs font-semibold text-[#60718c] mb-6">Підготовка до НМТ · 11 клас</p>
+                                <ul class="text-sm text-[#111827] space-y-3 mb-6">
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Формат: група</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Пакет: 1 місяць</span></li>
+                                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-[#0077b6] mt-1 text-xs" aria-hidden="true"></i><span class="text-[#60718c]">Додаткова практика</span></li>
+                                </ul>
+                            </div>
+                            <div class="pt-4 border-t border-[#e8edf3] mt-auto">
+                                <p class="text-2xl font-black text-[#111827] mb-4">1 300 <span class="text-sm font-normal text-[#60718c]">грн/міс</span></p>
+                                <a class="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-white text-[#111827] border border-[#03a9fc] hover:bg-[#f0f8ff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 transition whitespace-nowrap" href="#contact">Дізнатись більше</a>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="text-xs text-[#60718c]">Оберіть пакет натисканням на картку. «Дізнатись більше» — деталі пакета.</p>
+                </div>
+            </section>
+            <script>
+                document.querySelector('.calculator-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    document.getElementById('tariffs').classList.remove('hidden');
+                });
+            </script>
+        </section>
+
+        <!-- Заявка: контактні дані та навчальні параметри. -->
+        <section id="contact" class="section-spacing" aria-labelledby="contact-title">
+            <div class="page-width partitioned-section contact-proportions">
+                <div>
+                    <p class="eyebrow">Почнімо разом</p>
+                    <h2 class="section-title" id="contact-title">Подати заявку</h2>
+                    <p>Залиште контакт — зв'яжемося з вами, визначимо потреби учня та допоможемо обрати напрям навчання.</p>
+                    <aside class="contact-note">
+                        <h3>Не знаєте, з чого почати?</h3>
+                        <p>Оберіть «Не знаю» — допоможемо визначити напрям і формат під час розмови. Пробний урок можна забронювати окремо.</p>
+                    </aside>
+                </div>
+                <form class="form" action="#contact" method="get">
+                    <fieldset class="radio-field">
+                        <legend>Як заповнити дані про навчання?</legend>
+                        <label class="radio-button"><input type="radio" name="request-mode" value="manual" checked> Ввести дані самостійно</label>
+                        <label class="radio-button"><input type="radio" name="request-mode" value="calculator"> Підтягнути з калькулятора</label>
+                        <label class="radio-button"><input type="radio" name="request-mode" value="unsure"> Не знаю</label>
+                    </fieldset>
+                    <p class="form-hint">* Обов'язкові поля. Бали НМТ — від 100 до 200.</p>
+                    <div class="field">
+                        <label for="name">Ваше ім'я</label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="Як до вас звертатися?" required>
+                    </div>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="contact-method">Спосіб зв'язку</label>
+                            <select id="contact-method" name="contact-method">
+                                <option value="phone">Телефон</option>
+                                <option value="telegram">Telegram</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Номер телефону</label>
+                            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+380" required>
+                        </div>
+                        <div class="field">
+                            <label for="contact-course">Напрям навчання</label>
+                            <select id="contact-course" name="contact-course">
+                                <option value="">Оберіть напрям</option>
+                                <option>Шкільна математика</option>
+                                <option selected>Підготовка до НМТ</option>
+                                <option>Профільна математика</option>
+                                <option>Олімпіадна математика</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="contact-grade">Клас</label>
+                            <select id="contact-grade" name="contact-grade">
+                                <option value="">Оберіть клас</option>
+                                <option>1–4 клас</option>
+                                <option>5–8 клас</option>
+                                <option selected>9–11 клас</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="contact-current-score">Поточний бал НМТ</label>
+                            <input id="contact-current-score" name="contact-current-score" type="number" min="100" max="200" placeholder="100–200">
+                        </div>
+                        <div class="field">
+                            <label for="contact-target-score">Бажаний бал НМТ</label>
+                            <input id="contact-target-score" name="contact-target-score" type="number" min="100" max="200" placeholder="100–200">
+                        </div>
+                        <div class="field">
+                            <label for="format">Формат занять</label>
+                            <select id="format" name="format">
+                                <option value="">Оберіть формат</option>
+                                <option>Група</option>
+                                <option>Мінігрупа</option>
+                                <option>Індивідуально</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="contact-duration">Тривалість навчання</label>
+                            <select id="contact-duration" name="contact-duration">
+                                <option>1 місяць</option>
+                                <option>3 місяці</option>
+                                <option>6 місяців</option>
+                            </select>
+                        </div>
+                    </div>
+                    <fieldset class="radio-field applicant-field">
+                        <legend>Хто заповнює заявку?</legend>
+                        <label class="radio-button"><input type="radio" name="applicant" value="student" checked> Я учень</label>
+                        <label class="radio-button"><input type="radio" name="applicant" value="parent"> Я батько/мати</label>
+                    </fieldset>
+                    <button class="min-h-[44px] px-4 py-2.5 rounded-xl text-[15px] font-semibold bg-[#03a9fc] text-[#06243a] shadow-lg shadow-[#03a9fc]/10 hover:bg-[#00a0ed] hover:shadow-lg hover:shadow-[#03a9fc]/20 transition w-full sm:w-auto" type="submit">Подати заявку <i class="icon fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    <p class="form-hint">Натискаючи «Подати заявку», ви погоджуєтесь із <a href="#contact">Політикою конфіденційності</a>.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал сайту: короткий опис, соцмережі, контакти та юридична інформація. -->
+    <footer class="bg-[#fbfcfe] border-t border-[#e8edf3] py-12 font-['Lato',sans-serif]">
+        <div class="page-width">
+            <div class="footer-sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-8 border-b border-[#e8edf3]">
+                <div class="lg:col-span-2 flex flex-col gap-3">
+                    <a href="#top" aria-label="ONLYMATH-UA — на головну" class="inline-flex items-center gap-3 text-lg font-bold text-[#111827] hover:text-[#0077b6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded-lg transition-colors w-fit">
+                        <img src="assets/icons/logo.svg" alt="" width="40" height="40" loading="lazy" class="w-10 h-10 object-contain">
+                        <span>ONLYMATH-UA</span>
+                    </a>
+                    <p class="text-sm text-[#60718c] max-w-[300px] leading-relaxed">
+                        Онлайн-навчання математики для учнів 1–11 класів: шкільна та профільна математика, НМТ, олімпіади й МАН.
+                    </p>
+                </div>
+
+                <nav class="flex flex-col gap-2 text-sm text-[#60718c]" aria-labelledby="footer-social-title">
+                    <h2 id="footer-social-title" class="text-base font-bold text-[#111827] mb-1">Соцмережі</h2>
+                    <p>
+                        Youtube ·
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0077b6] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded transition-colors">Youtube.com</a>
+                    </p>
+                    <p>
+                        Instagram ·
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0077b6] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded transition-colors">Instagram.com</a>
+                    </p>
+                </nav>
+
+                <section class="section-spacing flex flex-col gap-2 text-sm text-[#60718c]" aria-labelledby="footer-contact-title">
+                    <h2 id="footer-contact-title" class="text-base font-bold text-[#111827] mb-1">Контакти</h2>
+                    <address class="not-italic flex flex-col gap-2">
+                        <p>
+                            Телефон:
+                            <a href="tel:+380973141592" class="hover:text-[#0077b6] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded transition-colors">+380 97 314 15 92</a>
+                        </p>
+                        <p class="break-all">
+                            Email:
+                            <a href="mailto:dunnowhatcaniputhere@gmail.com" class="hover:text-[#0077b6] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded transition-colors">dunnowhatcaniputhere@gmail.com</a>
+                        </p>
+                    </address>
+                </section>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#60718c]">
+                <p class="m-0">&copy; ONLYMATH-UA. Усі права захищені.</p>
+                <a href="#contact" class="hover:text-[#0077b6] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#03a9fc] focus-visible:ring-offset-2 rounded transition-colors">Політика конфіденційності</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
